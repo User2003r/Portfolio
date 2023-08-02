@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.main {
+    background: url('./Images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+
+    height: 10vh;
+    width: 100%;
+    padding-top: 23px;
+    position: fixed;
+
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 13px 50px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    color: white;
+
+}
+
+nav ul li a::after {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.profile {
+    width: 70vw;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile img {
+    height: 300px;
+    width: 300px;
+}
+
+.profile p span {
+    color: #ff0;
+}
+
+
+.profile p {
+    font-size: 3rem;
+    color: white;
+}
+
+
+/* Contact PAge Styles */
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./Images/contact_bg.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_flex {
+    display: flex;
+
+}
+
+.contact_left {
+    height: 92vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact_right {
+    height: 100vh;
+    width: 50%;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+}
+
+
+
+.call_details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55%;
+    flex-wrap: wrap;
+}
+
+#icon {
+    font-size: 38px;
+}
+
+.span_call_me {
+    color: white;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+input {
+    padding: 11px 8px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+}
+
+textarea {
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 7px;
+}
+
+.btn-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+
+
+}
+
+.submit {
+    background: white;
+    padding: 6px 9px;
+    border: none;
+    font-weight: bold;
+    position: relative;
+
+    z-index: 1;
+
+
+}
+
+.submit::after {
+    content: '';
+    height: 100%;
+    width: 0;
+    background: #0d73d9;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    opacity: 1;
+    transition: 0.5s;
+
+    z-index: -1;
+}
+
+.submit:hover::after {
+    width: 100%;
+}
+
+/* Skills Page Styles */
+
+.skills {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./Images/skiils_bg.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.skills_section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.skills-img {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills-img-flexbox {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.skills-img-flexbox img {
+    height: 200px;
+    width: 200px;
+    border-radius: 106px;
+}
+
+.skills-rating {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-flexbox {
+    height: 500px;
+    width: 500px;
+
+}
+
+.rating-flexbox .icon {
+    font-size: 2rem;
+    color: yellow;
+}
+
+h3 {
+    color: white;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.rating-flexbox .star {
+    font-size: 2rem;
+    color: white;
+}
+
+.rating-icons {
+    display: flex;
+    width: 49%;
+    justify-content: space-between;
+}
+
+/* About page styles */
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./Images/about.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid white;
+
+}
+
+.personal-data {
+    width: 80vw;
+    height: 66vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.personal-data p {
+    font-size: 40px;
+    text-align: justify;
+    color: white;
+}
+
+.personal-data h1 {
+    font-size: 50px;
+    color: white;
+}
+
+/* MEdia Queries */
+
+@media (max-width: 774px) {
+    .profile img {
+        height: 200px;
+        width: 200px;
+
+    }
+
+    .profile p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:680px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .name input {
+        width: 150px;
+    }
+
+    .user_info h1 {
+        font-size: 33px;
+    }
+}
+
+@media(max-width:602px) {
+    nav ul li {
+        padding: 13px 19px;
+    }
+}
+
+@media(max-width:1146px) {
+    .skills-img-flexbox img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .rating-flexbox {
+        width: 400px;
+
+
+    }
+}
+
+@media(max-width:832px) {
+    .skills-img-flexbox img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .rating-flexbox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:590px) {
+    .skills-img {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:560px) {
+    .personal-data h1 {
+        font-size: 2rem;
+    }
+
+    .personal-data p {
+        font-size: 1rem
+    }
+}
+
+@media (max-width:818px) {
+    .personal-data h1 {
+        font-size: 40px;
+    }
+
+    .personal-data p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:506px) {
+    .user_info h1 {
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width:410px) {
+    nav ul li {
+        padding: 13px 9px;
+    }
+
+    .profile p {
+        font-size: 30px;
+    }
+
+    .profile img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .rating-flexbox .icon {
+        font-size: 1rem;
+
+    }
+
+    .rating-flexbox .star {
+        font-size: 1rem;
+    }
+
+    .rating-flexbox {
+        justify-content: center;
+    }
+}
