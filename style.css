@@ -28,6 +28,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 15vh;
+    position: relative;
 
 }
 
@@ -76,4 +77,16 @@ li a:hover::before {
     transform-origin: left;
     /* visibility: visible; */
     transform: scaleX(1);
+}
+
+.resume {
+    position: absolute;
+    right: 50px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px 5px 10px 5px;
+    background: white;
+    color: #154c79;
+    font-size: 1rem;
+    font-weight: 700;
+    border: #64f7f2;
 }
