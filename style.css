@@ -5,16 +5,20 @@
     font-family: sans-serif;
 }
 
-body {
-    background-image: url('/anas-alshanti-feXpdV001o4-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .container {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url('/anas-alshanti-feXpdV001o4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blur {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 a {
@@ -35,7 +39,7 @@ nav {
 ul {
     width: 60vw;
     height: 6.5vh;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgba(232, 230, 230, 0.974);
     display: flex;
     justify-content: center;
@@ -106,40 +110,80 @@ li a:hover::before {
 }
 
 .logo {
-    height: 50px;
-    width: 110px;
     position: absolute;
-    left: 50px;
+    left: 40px;
 }
 
-.logo img {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transform: scale(1);
-    transition: transform .3s ease-in-out;
+.logo h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
-.logo img:hover {
-    transform: scale(1.2);
+.logo span {
+    color: yellow;
 }
 
 main {
     width: 100vw;
+    height: 70vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 
 
 }
 
 .left {
-    width: 40%;
-    border: 1px solid white;
+    height: 70%;
+    width: 30%;
+    /* border: 1px solid white; */
 }
 
 .right {
-    width: 40%;
-    border: 1px solid white;
+    height: 70%;
+    width: 30%;
+    /* border: 1px solid white; */
 
+}
+
+.left h1 {
+    color: white;
+    font-size: 3rem;
+    line-height: 54px;
+}
+
+span {
+    color: orange;
+}
+
+.fa {
+    color: white;
+    font-size: 2.3rem;
+    margin: 5px 10px;
+    cursor: pointer;
+    transform: scale(1);
+
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa:hover {
+    transform: scale(1.5);
+    transition: .3s all ease-in-out;
+}
+
+
+/* About Page  */
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./bg2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
